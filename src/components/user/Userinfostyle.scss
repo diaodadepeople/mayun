@@ -1,0 +1,17 @@
+@import '@/qunar/reset.scss';
+
+.userinfo {
+  @include rect(100%, auto);
+  li {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include padding(.1rem);
+    @include background-color(#fff);
+    @include border(1px 0, #ccc, solid);
+    span {
+      @include font-size(.16rem);
+    }
+  }
+}

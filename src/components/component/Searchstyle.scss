@@ -1,0 +1,45 @@
+@import '@/qunar/reset.scss';
+
+a {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  @include padding();
+  .bookimg {
+    img {
+      @include rect(1.4rem, auto);
+    }
+  }
+  .info-m {
+    @include rect(100%, 1.4rem);
+    @include padding(.1rem .2rem);
+    @include background-color(#fff);
+    @include flexbox();
+    @include justify-content();
+    // @include align-items();
+    @include flex-direction(column);
+    h3 {
+      @include rect(100%, 60%);
+      @include overflow();
+    }
+    .info-b {
+      @include rect(100%, 20%);
+      @include font-size(.18rem);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include color(#f00);
+      span {
+        @include rect(.4rem, .3rem);
+        @include border(.05rem, #666, solid);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+      }
+    }
+    p {
+      @include rect(100%, 20%);
+      @include margin(.03rem);
+    }
+  }
+}

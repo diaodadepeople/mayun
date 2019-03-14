@@ -1,0 +1,105 @@
+@import '@/qunar/reset.scss';
+
+.detailbox {
+  h3 {
+    @include font-size(.14rem);
+    @include margin();
+  }
+  .detailimg {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include padding(.3rem);
+    @include margin(.05rem 0);
+    @include background-color(#fff);
+    img {
+      @include rect(80%, auto);
+    }
+  }
+  .info {
+    @include rect(100%, auto);
+    @include padding(.1rem .2rem);
+    @include background-color(#fff);
+    h2 {
+      @include font-size(.18rem);
+      @include color(#f00);
+      @include margin();
+    }
+    p {
+      @include margin(.03rem);
+    }
+  }
+  .detailinfo {
+    @include rect(100%, auto);
+    li {
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      @include padding(.1rem);
+      @include background-color(#fff);
+      @include border(1px 0, #ccc, solid);
+      @include margin(.05rem 0);
+      .sum {
+        @include flexbox();
+        input {
+          @include rect(.3rem, auto);
+        }
+      }
+    }
+  }
+  .explain {
+    @include rect(100%, auto);
+    @include padding(.1rem);
+    @include background-color(#fff);
+    @include margin(.1rem 0);
+  }
+}
+
+.detailfooter {
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  .detailfooter-l {
+    @include rect(auto, auto);
+    @include flexbox();
+    @include flex();
+    @include justify-content();
+    @include align-items();
+    @include color(#ccc);
+    @include background-color(#eee);
+    .footernav {
+      @include rect(33%, auto);
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content();
+      @include align-items();
+      span {
+        // @include rect(.5rem, .5rem);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+      }
+      p {
+        @include margin();
+      }
+    }
+  }
+  .detailfooter-r {
+    @include rect(auto, .55rem);
+    @include flexbox();
+    div {
+      @include rect(auto, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include background-color(#108ee9);
+      @include padding(.1rem);
+      @include color(#fff);
+    }
+    .red {
+      @include background-color(#f66);
+    }
+  }
+}

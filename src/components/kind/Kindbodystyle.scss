@@ -1,0 +1,28 @@
+@import '@/qunar/reset.scss';
+
+.kindbox {
+  @include rect(100%, auto);
+  span {
+    @include rect(100%, .5rem);
+    @include flexbox();
+    @include align-items();
+    @include margin(0 0 0 .2rem);
+  }
+  ul {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(flex-start);
+    @include align-items();
+    @include padding(0 0 0 .1rem);
+    a {
+      @include rect(32.7%, .36rem);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include margin(.01rem);
+      @include background-color(#fff);
+    }
+  }
+}
+

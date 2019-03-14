@@ -1,0 +1,47 @@
+@import '@/qunar/reset.scss';
+
+.userbody {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include flex-direction(column);
+  @include background-color(#eee);
+  .selectbox {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include flex-direction(column);
+    @include background-color(#fff);
+    @include margin(.15rem 0 0 0);
+    .selecthead {
+      @include rect(100%, .5rem);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      .selecthead-l {
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+      }
+    }
+    .selectbody {
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include border(.01rem 0 0 0, solid);
+      div {
+        @include rect(33.3%, auto);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content();
+        @include align-items();
+        @include padding();
+      }
+    }
+  }
+  span {
+    @include rect(.3rem, .3rem);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+  }
+}

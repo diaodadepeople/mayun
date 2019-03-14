@@ -1,0 +1,70 @@
+@import '@/qunar/reset.scss';
+
+.cartbox {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  @include margin(.1rem 0);
+  @include background-color(#fff);
+  .bookimg {
+    img {
+      @include rect(1.4rem, auto);
+    }
+  }
+  .info-m {
+    @include rect(auto, 1.4rem);
+    @include padding(.1rem);
+    @include flexbox();
+    @include justify-content();
+    @include flex-direction(column);
+    @include flex();
+    h3 {
+      @include rect(100%, 50%);
+      @include overflow();
+    }
+    .red {
+      @include color(#f00);
+    }
+    .sum {
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content(flex-start);
+      @include line-height(.3rem);
+      input {
+        @include rect(.3rem, .3rem);
+      }
+      a {
+        @include rect(.3rem, .3rem);
+      }
+    }
+  }
+}
+
+.cart-b {
+  @include rect(100%, .5rem);
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  @include background-color(#fff);
+  @include margin(.05rem 0);
+  .total {
+    @include rect(auto, auto);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include flex();
+    span {
+      @include font-size(.18rem);
+      @include color(#f00);
+    }
+  }
+  .settle {
+    @include rect(1rem, .5rem);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include background-color(#f66);
+    @include color(#fff);
+  }
+}

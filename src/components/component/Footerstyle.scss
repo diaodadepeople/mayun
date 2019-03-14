@@ -1,0 +1,32 @@
+@import '@/qunar/reset.scss';
+
+.footer {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  @include color(#ccc);
+  @include background-color(#eee);
+  .footernav {
+    @include rect(25%, auto);
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content();
+    @include align-items();
+    @include padding();
+    .iconfont {
+      // @include rect(.5rem, .5rem);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+    }
+    p {
+      @include margin();
+    }
+    &.active {
+      @include color(#f66);
+    }
+  }
+}
+
+

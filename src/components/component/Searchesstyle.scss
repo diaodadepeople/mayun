@@ -1,0 +1,17 @@
+@import '@/qunar/reset.scss';
+
+.searches {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(flex-start);
+  @include align-items();
+  span {
+    @include rect(auto, auto);
+    @include border-radius(.15rem);
+    @include line-height(.2rem);
+    @include padding();
+    @include margin();
+    @include background-color(#fff);
+  }
+}
